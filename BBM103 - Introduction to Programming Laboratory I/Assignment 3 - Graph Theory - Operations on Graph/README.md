@@ -1,0 +1,1 @@
+A social network such as Facebook, Twitter, Instagram etc. is a network which is a set of objects (nodes) with interconnections (edges). Here, nodes refer to individuals or things within the network and edges refer to relations/interactions between individuals or things. 
