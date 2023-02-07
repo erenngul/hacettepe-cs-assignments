@@ -1,0 +1,1 @@
+In this assignment, the aim is to design and simulate combinational circuits in Verilog HDL. 2's complementer, 4-bit 2x1 multiplexer, 4-bit full adder, 4-bit RCA, 4-bit adder/subtractor are implemented.
