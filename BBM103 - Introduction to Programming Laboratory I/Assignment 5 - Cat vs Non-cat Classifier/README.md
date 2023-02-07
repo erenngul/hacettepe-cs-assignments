@@ -1,0 +1,1 @@
+In this experiment, a 2 Layer Neural Network is implemented to solve a real world machine learning problem with a real world data. Python data science libraries are used such as; Pandas, NumPy, and Matplotlib. In the end, a deep neural network is built that classifies cat vs. non-cat images.
