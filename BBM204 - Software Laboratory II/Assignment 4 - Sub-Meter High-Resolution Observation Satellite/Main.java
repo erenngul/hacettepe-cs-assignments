@@ -27,16 +27,9 @@ public class Main
 
 
         // Step 2 - construct DrawingPanel, and get its Graphics context
-        /**
-          * 0 points if left uncommented
-          * */
-        // COMMENT OUT THESE LINES BEFORE TURBO TESTING AND SUBMISSION
-//        DrawingPanel panel = new DrawingPanel(num_rows, num_cols);
-//        Graphics g = panel.getGraphics();
-//        map.drawGrayscaleMap(g);
-        /**
-          * 0 points if left uncommented
-          * */
+        DrawingPanel panel = new DrawingPanel(num_rows, num_cols);
+        Graphics g = panel.getGraphics();
+        map.drawGrayscaleMap(g);
 
         // Step 3 - get the most cost-efficient path between source and destination Points
         System.out.println("########## Mission 0 ##########");
@@ -49,15 +42,7 @@ public class Main
             double totalCost = map.getMostEfficientPathCost(shortestPath);
             System.out.println("The most cost-efficient path has a cost of: " + totalCost);
 
-            /**
-             * 0 points if left uncommented
-             * */
-
-//            map.drawMostEfficientPath(g, shortestPath); // COMMENT OUT THIS LINE BEFORE TURBO TESTING AND SUBMISSION
-
-            /**
-             * 0 points if left uncommented
-             * */
+            map.drawMostEfficientPath(g, shortestPath);
         }
 
         // Step 4 - get the lowest elevation Escape Path towards the West from a source Point
@@ -67,52 +52,6 @@ public class Main
         int totalChange = map.getLowestElevationEscapePathCost(leastElevationPath);
         System.out.println("The escape path has the least elevation cost of: " + totalChange);
 
-        /**
-         * 0 points if left uncommented
-         * */
-
-//        map.drawLowestElevationEscapePath(g, leastElevationPath);  // COMMENT OUT THIS LINE BEFORE TURBO TESTING AND SUBMISSION
-
-        /**
-         * 0 points if left uncommented
-         * */
-
-
-        /**
-         * 0 points if left uncommented
-         * */
-        // Extra example for drawing map
-        // COMMENT OUT THESE LINES BEFORE TURBO TESTING AND SUBMISSION
-//        DrawingPanel panel2 = new DrawingPanel(473, 347);
-//        Graphics g2 = panel2.getGraphics();
-//        drawFunny(g2, 347, 473, "semester.txt");
-        /**
-         * 0 points if left uncommented
-         * */
+      map.drawLowestElevationEscapePath(g, leastElevationPath);
     }
-
-//    public static void drawFunny(Graphics g, int height, int width, String filename) {
-//        int[][] grid = new int[height][width];
-//        Scanner sc;
-//        try {
-//            sc = new Scanner(new File(filename));
-//            for (int i = 0; i < height; i++) {
-//                for (int j = 0; j < width; j++) {
-//                    if (sc.hasNextInt()) {
-//                        grid[i][j] = sc.nextInt();
-//                    }
-//                }
-//            }
-//
-//            for (int i = 0; i < height; i++) {
-//                for (int j = 0; j < width; j++) {
-//                    int value = grid[i][j];
-//                    g.setColor(new Color(value, value, value));
-//                    g.fillRect(j, i, 1, 1);
-//                }
-//            }
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//    }
 }
